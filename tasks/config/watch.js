@@ -20,7 +20,7 @@ module.exports = function (grunt) {
         sass: {
             // Assets to watch:
             files: ['frontend/sass/**'],
-            tasks: ['sass:development', "postcss"]
+            tasks: ['sass:development']
         },
         copyViews: {
             // Assets to watch:

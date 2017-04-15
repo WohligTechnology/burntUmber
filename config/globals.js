@@ -71,14 +71,6 @@ global["validators"] = require('mongoose-validators');
 global["monguurl"] = require('monguurl');
 require('mongoose-middleware').initialize(mongoose);
 global["Schema"] = mongoose.Schema;
-global["Grid"] = require('gridfs-stream');
-global["gfs"] = Grid(mongoose.connections[0].db, mongoose);
-global["http"] = require('http');
-gfs.mongo = mongoose.mongo;
-
-//Image Library
-global["stream"] = require('stream');
-global["Jimp"] = require("jimp");
 
 // Util Globals
 global["moment"] = require("moment");
@@ -87,10 +79,8 @@ global["_"] = require('lodash');
 global["chalk"] = require('chalk');
 global["uid"] = require('rand-token').uid;
 global["request"] = require('request');
-global["fs"] = require('fs');
-global["json2xls"] = require('json2xls');
-global["xlsx"] = require('node-xlsx').default;
-// global["pdf"] = require('html-pdf');
+global["stream"] = require('stream');
+global["Jimp"] = require('jimp');
 
 // passport Globals
 global["passport"] = require('passport');
@@ -117,7 +107,7 @@ global["log"] = function (data) {
     console.log(data);
 };
 
-if (process.env.NODE_ENV && process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV) {
     global["env"] = require("./env/production.js");
 } else {
     global["env"] = require("./env/development.js");

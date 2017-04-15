@@ -16,8 +16,8 @@ var schema = new Schema({
         uniqueCaseInsensitive: true
     },
     image: String,
-    extLing: String,
-    status: Boolean
+    extLink: String,
+    status: String
 });
 
 schema.plugin(deepPopulate, {});

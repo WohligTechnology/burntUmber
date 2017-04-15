@@ -5,11 +5,10 @@ module.exports = [
   'bower_components/flexslider/jquery.flexslider-min.js',
   'bower_components/fancyBox/source/jquery.fancybox.js',
   'bower_components/smart-app-banner/smart-app-banner.js',
-  "bower_components/moment/min/moment.min.js",
 
   //Angular Libs
-  'bower_components/angular/angular.js',
-  'bower_components/angular-sanitize/angular-sanitize.js',
+  'bower_components/angular/angular.min.js',
+  'bower_components/angular-sanitize/angular-sanitize.min.js',
   'bower_components/angular-animate/angular-animate.min.js',
   'bower_components/angular-bootstrap/ui-bootstrap.min.js',
   'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
@@ -21,28 +20,10 @@ module.exports = [
   'bower_components/angulartics-google-analytics/dist/angulartics-ga.min.js',
   'bower_components/angular-ui-swiper/dist/angular-ui-swiper.js',
 
-  //App.js
-  'js/app.js',
-
-  // Languages
-  'js/languages/language.js',
-
-
-  // Directives
-  'js/directives/directive.js',
-
-  // Filters
-  'js/filters/filter.js',
-
-  // Services
-  'js/services/template.js',
-
-  //Factories
-  'js/factories/navigation.js',
-  'js/factories/api.js',
-
-  // Contorllers
-  'js/controllers/controller.js',
-  'js/controllers/header-controller.js',
-  'js/controllers/language-controller.js',
+  //Work files
+  'frontend/js/app.js',
+  'frontend/js/language.js',
+  'frontend/js/controllers.js',
+  'frontend/js/templateservice.js',
+  'frontend/js/navigation.js',
 ];

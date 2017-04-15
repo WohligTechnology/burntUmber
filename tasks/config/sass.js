@@ -1,12 +1,13 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
     grunt.config.set('sass', {
+
         development: {
             options: {
                 sourceMap: true
             },
             files: {
-                "frontend/css/import.css": "frontend/sass/import.scss"
+                ".tmp/public/frontend/css/main.css": "frontend/sass/main.scss"
             }
         },
         backendDevelopment: {
@@ -22,7 +23,7 @@ module.exports = function (grunt) {
                 sourceMap: false
             },
             files: {
-                ".tmp/public/frontend/css/import.css": "frontend/sass/import.scss"
+                ".tmp/public/frontend/css/main.css": "frontend/sass/main.scss"
             }
         }
     });

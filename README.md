@@ -1,1 +1,3 @@
-Node Framework for Wohlig 
+# nodharma
+
+a [Sails](http://sailsjs.org) application

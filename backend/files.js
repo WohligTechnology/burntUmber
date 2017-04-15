@@ -7,6 +7,8 @@ module.exports = [
     'bower_components/fancyBox/source/jquery.fancybox.js',
     'bower_components/peity/jquery.peity.min.js',
     'bower_components/jquery-slimscroll/jquery.slimscroll.min.js',
+    '../../js/tinymce/tinymce.js',
+    '../../js/tinymce/themes/modern/theme.js',
     'bower_components/angular/angular.min.js',
     'bower_components/angular-animate/angular-animate.min.js',
     'bower_components/angular-flexslider/angular-flexslider.js',
@@ -32,30 +34,11 @@ module.exports = [
     "bower_components/intl-tel-input/lib/libphonenumber/build/utils.js",
     "bower_components/intl-tel-input/build/js/intlTelInput.js",
     "bower_components/international-phone-number/releases/international-phone-number.js",
-    'bower_components/textAngular/dist/textAngular-rangy.min.js',
-    'bower_components/textAngular/dist/textAngular-sanitize.min.js',
-    'bower_components/textAngular/dist/textAngular.min.js',
 
-
-    //App.js
-    'js/app.js',
-
-    // Languages
-    'js/languages/language.js',
-
-    // Directives
-    'js/directives/directive.js',
-
-    // Filters
-    'js/filters/filter.js',
-
-    // Services
-    'js/services/template.js',
-    'js/services/jsonService.js',
-
-    //Factories
-    'js/factories/navigation.js',
-
-    // Contorllers
-    'js/controllers/controller.js',
+    'backend/js/app.js',
+    'backend/js/language.js',
+    'backend/js/controllers.js',
+    'backend/js/navigation.js',
+    'backend/js/templateservice.js',
+    'backend/js/jsonService.js',
 ];

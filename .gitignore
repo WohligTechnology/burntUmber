@@ -120,6 +120,3 @@ nbproject
 .tmp
 .editorconfig
 .sailsrc
-backup
-.vscode
-frontend/css

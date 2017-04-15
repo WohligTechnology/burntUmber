@@ -15,9 +15,10 @@ var schema = new Schema({
         unique: true,
         uniqueCaseInsensitive: true
     },
+    // Not needed. Instead urlSlug package is installed
     urlSlug: String,
     imgLink: String,
-    status: Boolean
+    status: String
 });
 
 schema.plugin(deepPopulate, {});

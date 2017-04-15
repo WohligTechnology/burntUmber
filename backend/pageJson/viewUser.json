@@ -1,5 +1,5 @@
 {
-    "title": "User",
+    "title": "Users",
     "description": "List of Users",
     "pageType": "view",
     "sendIdWithCreate": true,

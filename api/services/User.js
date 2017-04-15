@@ -70,34 +70,37 @@ var schema = new Schema({
         default: "User",
         enum: ['User', 'Admin']
     },
-    addresses: [{
+    addresses: {
         roomNo: String,
         street: String,
         locality: String,
         city: String,
         state: String,
         zip: Number
-    }],
-    gender: String,
-    delivery_addresses: [{
+    },
+    deliveryAddresses: {
         roomNo: String,
         street: String,
         locality: String,
         city: String,
         state: String,
         zip: Number
-    }],
+    },
+    gender: {
+        type: String,
+        enum: ["M", "F"]
+    },
     lastAccessed: Date,
-    // cart: [{
-    //     product: String,
-    //     productJson: String,
-    //     quantity: Number
-    // }],
+    cart: [{
+        product: String,
+        productJson: String,
+        quantity: Number
+    }],
     wishlist: [{
         productId: Schema.Types.ObjectId
     }],
     emailConfirmed: Boolean,
-    blocked: Boolean
+    status: String
 });
 
 schema.plugin(deepPopulate, {
@@ -144,7 +147,7 @@ var model = {
                 if (user.image && user.image.url) {
                     modelUser.photo = user.image.url;
                 }
-                Model.saveData(modelUser, function (err, data2) {
+                Model.saveData(modelUser, function (err, data2) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
                     if (err) {
                         callback(err, data2);
                     } else {
